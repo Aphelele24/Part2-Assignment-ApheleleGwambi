@@ -1,0 +1,70 @@
+/* =====================================
+   COMMON STYLES FOR ALL PAGES
+===================================== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #fae6b8;
+    color: Cosmic Latte;
+    padding: 15px;
+}
+
+nav a {
+    color: CosmicLatte;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* =====================================
+   HOME PAGE STYLES
+===================================== */
+
+.home-banner {
+    background-color: rgb(253, 222, 119);
+    padding: 50px;
+    text-align: center;
+}
+
+.home-title {
+    color: rgb(121, 75, 6);
+}
+
+/* =====================================
+   ABOUT PAGE STYLES
+===================================== */
+
+.about-section {
+    background-color: #f3e285;
+    padding: 40px;
+}
+
+.about-title {
+    color: rgb(247, 225, 131);
+}
+
+/* =====================================
+   CONTACT PAGE STYLES
+===================================== */
+
+.contact-form {
+    width: 300px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.contact-btn {
+    background-color: black;
+    color: rgb(241, 235, 174);
+    padding: 10px;
+    border: none;
+}
