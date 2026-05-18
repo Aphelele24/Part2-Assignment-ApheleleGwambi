@@ -1,22 +1,69 @@
 /* =====================================
    COMMON STYLES FOR ALL PAGES
 ===================================== */
-
-body {
+html, body{
+    height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
+
 }
 
+body {
+
+
+     background-color: rgb(250, 235, 206);
+     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+     flex: 1;
+}
 nav {
-    background-color: #fae6b8;
+    background-color: burlywood;
     color: Cosmic Latte;
     padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
 }
 
 nav a {
-    color: CosmicLatte;
-    text-decoration: none;
+    color: black;
+    text-decoration-color: rgb(5, 4, 0);
     margin-right: 15px;
+    background-color: burlywood;
+}
+
+h1 {
+  color: burlywood;
+  margin-left: 20px;
+}
+images{
+    display: flex;
+    gap: 20px;
+}
+
+images img{
+    width: 250px;
+    height: 350px;
+}
+.sale-banner{
+    background-color: rgba(100, 87, 27, 0.951);
+    color: black;
+
+    text-align: center;
+
+    padding: 15px;
+
+    font-size: 20px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
 }
 
 /* =====================================
@@ -24,13 +71,13 @@ nav a {
 ===================================== */
 
 .home-banner {
-    background-color: rgb(253, 222, 119);
-    padding: 50px;
+    background-color: #f3e285;
+    padding: 100px;
     text-align: center;
 }
 
 .home-title {
-    color: rgb(121, 75, 6);
+    color: rgb(108, 78, 23);
 }
 
 /* =====================================
@@ -67,4 +114,12 @@ nav a {
     color: rgb(241, 235, 174);
     padding: 10px;
     border: none;
+}
+  /* Footer styling */
+footer {
+    margin-top: auto;
+    background-color: burlywood; /* burlywood background */
+    color: black;            /* black text */
+    padding: 20px;             /* Space inside footer */
+    text-align: center;        /* Centered text */
 }
