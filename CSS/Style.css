@@ -94,45 +94,18 @@ images img{
 }
 
 /* =====================================
-   CONTACT PAGE STYLES
+Services PAGE STYLES
 ===================================== */
 
-.contact-form {
-    width: 300px;
-    margin: auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 8px;
-}
-
-.contact-btn {
-    background-color: black;
-    color: rgb(241, 235, 174);
-    padding: 10px;
-    border: none;
-}
-  /* Footer styling */
-footer {
-    margin-top: auto;
-    background-color: burlywood; /* burlywood background */
-    color: black;            /* black text */
-    padding: 20px;             /* Space inside footer */
-    text-align: center;        /* Centered text */
-}
-/* Only applies to cards inside .services-page */
-.services-page .services-grid {
+.images-page .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
   padding: 40px 20px;
 }
 
-.services-page .service-card {
-  background: linear-gradient(135deg, red 0%, black 100%);
+.images-page .service-card {
+  background: linear-gradient(135deg, rgb(228, 210, 169) 0%, rgb(247, 222, 138) 100%);
   color: white;
   border-radius: 16px;
   overflow: hidden;
@@ -141,30 +114,224 @@ footer {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.services-page .service-card:hover {
+.images-page .service-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
 }
 
-.services-page .service-card img {
+.images-page .service-card img {
   width: 100%;
-  height: 160px;
+  height: 400px;
   object-fit: cover;
   filter: brightness(0.9);
 }
 
-.services-page .service-card-content {
+.images-page .service-card-content {
   padding: 20px;
 }
 
-.services-page .service-card-content h3 {
+.images-page .service-card-content h3 {
   margin: 0 0 10px;
   font-size: 22px;
 }
 
-.services-page .service-card-content p {
+.images-page .service-card-content p {
   margin: 0;
   font-size: 15px;
   opacity: 0.9;
   line-height: 1.5;
+}
+
+/* =====================================
+   CONTACT PAGE STYLES
+===================================== */
+.contact-container {
+    max-width: 1200px; /* Supports all 3 columns gracefully */
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin: 40px auto;
+}
+
+.contact-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch; /* Keeps column heights identical */
+}
+
+/* COLUMN 1: SIDE DETAILS PANEL */
+.side-details {
+    flex: 0.9;
+    background: #72440e;
+    color: #ffffff;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-details h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.side-desc {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.info-links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.info-icon {
+    background: rgba(255, 255, 255, 0.2);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.info-text h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.info-text p {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* COLUMN 2: FORM BOX CONTAINER */
+.form-container {
+    flex: 1.2;
+    padding: 35px;
+    background: #ffffff;
+    position: relative;
+}
+
+.form-container h2 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 25px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #666666;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background: #fafafa;
+    color: #333333;
+    box-sizing: border-box;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #00bcd4;
+    background: #ffffff;
+}
+
+.input-group textarea {
+    resize: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #131415;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+    margin-top: 5px;
+}
+
+.submit-btn:hover {
+    background: #0097a7;
+}
+
+/* COLUMN 3: BALANCED GOOGLE MAP PANEL */
+.map-container-panel {
+    flex: 1.1; 
+    min-height: 100%;
+    position: relative;
+}
+
+.map-container-panel iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+
+/* =====================================
+   Enquiry PAGE STYLES
+===================================== */
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: rgb(108, 78, 23);
+    object-position:  center;
+
+}
+
+
+  /* Footer styling */
+footer {
+    margin-top: auto;
+    background-color: burlywood; /* burlywood background */
+    color: black;            /* black text */
+    padding: 20px;             /* Space inside footer */
+    text-align: center;        /* Centered text */
 }
